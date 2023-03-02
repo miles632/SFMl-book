@@ -9,12 +9,12 @@ public:
     void run();
 
 private:
-    void processEvents();
-    void update();
+    void processEvents();//handles user input
+    void update();//updates game logic
     void render();
 
 private:
     sf::RenderWindow mWindow;
-    sf::CircleShape shape;
+    sf::CircleShape mPlayer;
     
 };
