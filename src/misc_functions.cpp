@@ -103,3 +103,21 @@ inline void CenterSFMLText(sf::Text& l_text)
         rect.top + ((maxHeight >= rect.height ?
             maxHeight * 0.5f : rect.height * 0.5f)));
 }
+
+// Calculates distance between 2 points on axis
+template <class T>
+inline T CalculateXYDistance (T& x1, T& x2, T& y1, T& y2)
+{
+    distance = sqrt((x1 - x2)^2 + (y1 - y2)^2);
+    return distance;
+}
+
+/*
+// same shit but for z aswell, dont need it but whatever
+template <class t>
+inline T CalculateXYZDistance (T& x1, T& x2, T& y1, T& y2, T& z1, T& z2)
+{
+    distance = sqrt((x1 - x2)^2 + (y1 - y2)^2 + (z1 - z2)^2);
+    return distance;
+}
+*/
